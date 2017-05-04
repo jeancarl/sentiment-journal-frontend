@@ -1,0 +1,7 @@
+applications:
+- name: sentiment-journal
+  buildpack: staticfile_buildpack
+  host: sentiment-journal
+  domain: mybluemix.net
+  memory: 32M
+  path: dist

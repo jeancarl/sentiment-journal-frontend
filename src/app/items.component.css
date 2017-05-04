@@ -1,0 +1,12 @@
+.item { 
+    padding: 10px;
+    border: 1px solid #C0C0C0; 
+    background-color: #F0F0F0;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.item .positive, .item .neutral, .item .negative, .item .score {
+    float: left;
+    width: 100px;
+}
