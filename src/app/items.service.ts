@@ -5,10 +5,12 @@ import { Item } from './item';
 
 @Injectable()
 export class ItemsService {
-    private API_ENDPOINT = 'http://<host>.mybluemix.net/api/items'
+    private API_ENDPOINT = ''; // TODO: set this to point to backend API http://<host>.mybluemix.net/api/items
 
     constructor(private http: Http) {
-
+        if(this.API_ENDPOINT == '') {
+            alert('API Endpoint in items.service.ts has not been set!');
+        }
     }
 
     getItems(): Promise<Item[]> {
